@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xuka.ltdd.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+
+        >
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/logo"
+            android:src="@drawable/soda"
+            android:layout_alignParentLeft="true" />
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_alignLeft="@id/logo"
+            />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/image_button"
+            android:src="@drawable/qe"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="178dp">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view3"
+            android:layout_centerHorizontal="true"
+            android:text="Đặc Sản Đà Nẵng"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/image_view1"
+            android:layout_width="181dp"
+            android:layout_height="129dp"
+            android:src="@drawable/th" />
+
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="181dp"
+            android:layout_height="129dp"
+            android:layout_alignRight="@+id/text1"
+            android:layout_marginRight="68dp"
+            android:src="@drawable/unbo" />
+
+
+        <ImageView
+            android:id="@+id/image_view3"
+            android:layout_width="181dp"
+            android:layout_height="129dp"
+            android:layout_alignBottom="@+id/image_view4"
+            android:layout_alignTop="@+id/image_view4"
+            android:layout_toEndOf="@+id/image_view4"
+            android:layout_toRightOf="@+id/image_view4"
+            android:src="@drawable/qe" />
+
+        <ImageView
+            android:id="@+id/image_view4"
+            android:layout_width="181dp"
+            android:layout_height="129dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:src="@drawable/ho"></ImageView>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
